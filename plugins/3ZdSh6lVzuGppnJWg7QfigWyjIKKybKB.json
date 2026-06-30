@@ -1,0 +1,828 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-local-images-plus",
+        "version": "1.0.0",
+        "title": "Local Images Plus",
+        "description": "Local Images Plus Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "0.16.4",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "WebP",
+                    "target": "WebP"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Only filename",
+                    "target": "仅文件名"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Relative to note",
+                    "target": "相对于笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Full path",
+                    "target": "完整路径"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Next to note in the folder specified below",
+                    "target": "在下方指定文件夹中，与笔记同级"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "In the root folder specified below",
+                    "target": "在下方指定的根文件夹中"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Copy Obsidian settings",
+                    "target": "复制 Obsidian 设置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "div",
+                    "target": "div"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "button",
+                    "target": "button"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Triyng to enqueue item with attempts < 1",
+                    "target": "尝试将尝试次数小于 1 的项目加入队列"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Excluded folders regex:",
+                    "target": "排除文件夹正则表达式："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show notifications when pages were processed.",
+                    "target": "处理页面时显示通知。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Do not show additional commands in command palette. Reload the plugin in settings to take effect (turn off/on).",
+                    "target": "不在命令面板中显示额外命令。在设置中重新加载插件以生效（关闭/开启）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Process notes on create/copy/paste.",
+                    "target": "在创建/复制/粘贴时处理笔记。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Interval in seconds for processing update. It takes some time to reveal changed content of a note to plugins.",
+                    "target": "处理更新的间隔秒数。需要一些时间才能向插件显示笔记的更改内容。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If an error occurs during downloading (network etc.) try to re-download several times.",
+                    "target": "如果下载过程中发生错误（网络等），尝试重新下载多次。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Process all new created/cloud-synced files with corresponding extensions.",
+                    "target": "处理所有新创建/云同步的具有相应扩展名的文件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The plugin will also move all attachments from obsidian default folder to plugin folder.",
+                    "target": "插件还会将所有附件从 Obsidian 默认文件夹移动到插件文件夹。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The plugin will use MD5 when renaming all new attachments.",
+                    "target": "插件将在重命名所有新附件时使用 MD5。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Download unknown filetypes and save them with .unknown extension.",
+                    "target": "下载未知文件类型并以 .unknown 扩展名保存。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Compress all downloaded images. May reduce file size by several times, but can also affect performance.",
+                    "target": "压缩所有下载的图片。可能会将文件大小减少数倍，但也可能影响性能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Compress all pasted images. May reduce file size by several times, but can also affect performance.",
+                    "target": "压缩所有粘贴的图片。可能会将文件大小减少数倍，但也可能影响性能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select image compression type. Keep in mind that webp format has image size limitations.",
+                    "target": "选择图片压缩类型。请注意，webp 格式有图片尺寸限制。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Excluded folders. New files in these folders will not be processed automatically.",
+                    "target": "排除的文件夹。这些文件夹中的新文件将不会自动处理。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Image quality selection (30 to 100).",
+                    "target": "图片质量选择（30 到 100）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Do not download files with size less than this value. Set 0 for no limit.",
+                    "target": "不下载小于此值的文件。设置为 0 表示无限制。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The plugin will not download attachments with these extensions.",
+                    "target": "插件将不会下载带有这些扩展名的附件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The plugin will not create an Obsidian attachments folder. This may cause the plugin to behave incorrectly. ",
+                    "target": "插件将不会创建 Obsidian 附件文件夹。这可能会导致插件行为异常。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add media links captions to converted tags.",
+                    "target": "为转换后的标签添加媒体链接标题。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add [[original filename]] or [original filename](link to attachment) after replaced tag (only for file:// protocol or dropped/pasted files ).",
+                    "target": "在替换后的标签后添加 [[原始文件名]] 或 [原始文件名](附件链接)（仅适用于 file:// 协议或拖放/粘贴的文件）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Include only files with extensions only matching this pattern. Example: md|canvas",
+                    "target": "仅包含扩展名匹配此模式的文件。示例：md|canvas"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Do not move orphaned files into the garbage can.",
+                    "target": "不要将孤立文件移入回收站。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select whether to write full paths in tags or not.",
+                    "target": "选择是否在标签中写入完整路径。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Date format for ${date} variable. E.g.                  | MMMM Do YYYY, h:mm:ss a (March 20th 2024, 10:54:46 am)                  | dddd  (Wednesday)                 | MMM Do YY  (Mar 20th 24)",
+                    "target": "${date} 变量的日期格式。例如：| MMMM Do YYYY, h:mm:ss a（2024年3月20日 上午10:54:46）| dddd（星期三）| MMM Do YY（24年3月20日）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select where all new attachments will be saved.\nYou can use templates e.g. _resouces/${date}/${notename}",
+                    "target": "选择所有新附件的保存位置。\n您可以使用模板，例如 _resouces/${date}/${notename}"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Rename or move this folder to the obsidian or system garbage can when the associated note is deleted/renamed/moved.                   This setting takes effect only if the path contains ${notename} template at the end                  and the options 'Next to note in the folder specified below' / 'Relative to note' are selected.                  Use this setting at your own risk.",
+                    "target": "当关联的笔记被删除/重命名/移动时，将此文件夹重命名或移动到 Obsidian 或系统回收站。此设置仅在路径末尾包含 ${notename} 模板，且选择了"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Folder to keep all downloaded media files.",
+                    "target": "用于保存所有下载媒体文件的文件夹。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Enable debug output to console.",
+                    "target": "启用控制台调试输出。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show notifications",
+                    "target": "显示通知"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Disable additional commands",
+                    "target": "禁用附加命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Automatic processing",
+                    "target": "自动处理"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Automatic processing interval",
+                    "target": "自动处理间隔"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Number of retries for every single attachment",
+                    "target": "每个附件的重试次数"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Process all new markdown files",
+                    "target": "处理所有新的 Markdown 文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Process all new attachments",
+                    "target": "处理所有新的附件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use MD5 for new attachments (Pasted images and files)",
+                    "target": "对新附件使用 MD5（粘贴的图片和文件）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Download unknown filetypes",
+                    "target": "下载未知文件类型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Compress images (Web Images)",
+                    "target": "压缩图片（网页图片）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Compress images (Pasted Images)",
+                    "target": "压缩图片（粘贴的图片）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Compression type",
+                    "target": "压缩类型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Excluded folders",
+                    "target": "排除的文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Image Quality",
+                    "target": "图片质量"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "File size lower limit in Kb",
+                    "target": "文件大小下限（KB）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Exclusions",
+                    "target": "排除项"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Do not create Obsidian attachment folder (For compatibility with other plugins)",
+                    "target": "不创建 Obsidian 附件文件夹（用于兼容其他插件）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Preserve link captions",
+                    "target": "保留链接标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add original filename or 'Open file' tag",
+                    "target": "添加原始文件名或'打开文件'标签"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Include pattern",
+                    "target": "包含模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Remove files completely",
+                    "target": "彻底删除文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "How to write paths in tags",
+                    "target": "标签中路径的写法"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Date format",
+                    "target": "日期格式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Folder to save new attachments",
+                    "target": "保存新附件的文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Move/delete/rename media folder",
+                    "target": "移动/删除/重命名媒体文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Media folder",
+                    "target": "媒体文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Debug",
+                    "target": "调试"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter the full path in new lines, e.g. RootFolder/Subfolder.",
+                    "target": "在新行中输入完整路径，例如 RootFolder/Subfolder。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Anno Domini",
+                    "target": "公元"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Before Christ",
+                    "target": "公元前"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Localize attachments for the current note (plugin folder)",
+                    "target": "为当前笔记本地化附件（插件文件夹）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Localize attachments for the current note (Obsidian folder)",
+                    "target": "为当前笔记本地化附件（Obsidian 文件夹）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Set the first found # header as a note name.",
+                    "target": "将首个找到的 # 标题设为笔记名称"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Localize attachments for all your notes (plugin folder)",
+                    "target": "为所有笔记本地化附件（插件文件夹）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Convert selection to URI",
+                    "target": "将选区转换为 URI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Convert selection from html to markdown",
+                    "target": "将选区从 HTML 转换为 Markdown"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Remove all orphaned attachments (Obsidian folder)",
+                    "target": "删除所有孤立附件（Obsidian 文件夹）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Remove all orphaned attachments (Plugin folder)",
+                    "target": "删除所有孤立附件（插件文件夹）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Interface settings",
+                    "target": "界面设置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Processing settings",
+                    "target": "处理设置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Note settings",
+                    "target": "笔记设置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Orphaned attachments",
+                    "target": "孤立附件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Media folder settings",
+                    "target": "媒体文件夹设置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Troubleshooting",
+                    "target": "故障排除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Confirm",
+                    "target": "确认"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"Show notifications\")",
+                    "target": "setName(\"Show notifications\")"
+                },
+                {
+                    "source": "setDesc(\"Show notifications when pages were processed.\")",
+                    "target": "setDesc(\"Show notifications when pages were processed.\")"
+                },
+                {
+                    "source": "setName(\"Disable additional commands\")",
+                    "target": "setName(\"Disable additional commands\")"
+                },
+                {
+                    "source": "setDesc(\"Do not show additional commands in command palette. Reload the plugin in settings to take effect (turn off/on).\")",
+                    "target": "setDesc(\"Do not show additional commands in command palette. Reload the plugin in settings to take effect (turn off/on).\")"
+                },
+                {
+                    "source": "setName(\"Automatic processing\")",
+                    "target": "setName(\"Automatic processing\")"
+                },
+                {
+                    "source": "setDesc(\"Process notes on create/copy/paste.\")",
+                    "target": "setDesc(\"Process notes on create/copy/paste.\")"
+                },
+                {
+                    "source": "setName(\"Automatic processing interval\")",
+                    "target": "setName(\"Automatic processing interval\")"
+                },
+                {
+                    "source": "setDesc(\"Interval in seconds for processing update. It takes some time to reveal changed content of a note to plugins.\")",
+                    "target": "setDesc(\"Interval in seconds for processing update. It takes some time to reveal changed content of a note to plugins.\")"
+                },
+                {
+                    "source": "setName(\"Number of retries for every single attachment\")",
+                    "target": "setName(\"Number of retries for every single attachment\")"
+                },
+                {
+                    "source": "setDesc(\"If an error occurs during downloading (network etc.) try to re-download several times.\")",
+                    "target": "setDesc(\"If an error occurs during downloading (network etc.) try to re-download several times.\")"
+                },
+                {
+                    "source": "setName(\"Process all new markdown files\")",
+                    "target": "setName(\"Process all new markdown files\")"
+                },
+                {
+                    "source": "setDesc(\"Process all new created/cloud-synced files with corresponding extensions.\")",
+                    "target": "setDesc(\"Process all new created/cloud-synced files with corresponding extensions.\")"
+                },
+                {
+                    "source": "setName(\"Process all new attachments\")",
+                    "target": "setName(\"Process all new attachments\")"
+                },
+                {
+                    "source": "setDesc(\"The plugin will also move all attachments from obsidian default folder to plugin folder.\")",
+                    "target": "setDesc(\"The plugin will also move all attachments from obsidian default folder to plugin folder.\")"
+                },
+                {
+                    "source": "setName(\"Use MD5 for new attachments (Pasted images and files)\")",
+                    "target": "setName(\"Use MD5 for new attachments (Pasted images and files)\")"
+                },
+                {
+                    "source": "setDesc(\"The plugin will use MD5 when renaming all new attachments.\")",
+                    "target": "setDesc(\"The plugin will use MD5 when renaming all new attachments.\")"
+                },
+                {
+                    "source": "setName(\"Download unknown filetypes\")",
+                    "target": "setName(\"Download unknown filetypes\")"
+                },
+                {
+                    "source": "setDesc(\"Download unknown filetypes and save them with .unknown extension.\")",
+                    "target": "setDesc(\"Download unknown filetypes and save them with .unknown extension.\")"
+                },
+                {
+                    "source": "setName(\"Compress images (Web Images)\")",
+                    "target": "setName(\"Compress images (Web Images)\")"
+                },
+                {
+                    "source": "setDesc(\"Compress all downloaded images. May reduce file size by several times, but can also affect performance.\")",
+                    "target": "setDesc(\"Compress all downloaded images. May reduce file size by several times, but can also affect performance.\")"
+                },
+                {
+                    "source": "setName(\"Compress images (Pasted Images)\")",
+                    "target": "setName(\"Compress images (Pasted Images)\")"
+                },
+                {
+                    "source": "setDesc(\"Compress all pasted images. May reduce file size by several times, but can also affect performance.\")",
+                    "target": "setDesc(\"Compress all pasted images. May reduce file size by several times, but can also affect performance.\")"
+                },
+                {
+                    "source": "setName(\"Compression type\")",
+                    "target": "setName(\"Compression type\")"
+                },
+                {
+                    "source": "setDesc(\"Select image compression type. Keep in mind that webp format has image size limitations.\")",
+                    "target": "setDesc(\"Select image compression type. Keep in mind that webp format has image size limitations.\")"
+                },
+                {
+                    "source": "setName(\"Excluded folders\")",
+                    "target": "setName(\"Excluded folders\")"
+                },
+                {
+                    "source": "setDesc(\"Excluded folders. New files in these folders will not be processed automatically.\")",
+                    "target": "setDesc(\"Excluded folders. New files in these folders will not be processed automatically.\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enter the full path in new lines, e.g. RootFolder/Subfolder.\")",
+                    "target": "setPlaceholder(\"Enter the full path in new lines, e.g. RootFolder/Subfolder.\")"
+                },
+                {
+                    "source": "log(\"Excluded folders regex:\", regexconverted);\n                }\n            }));\n            text.inputEl.rows = 4;\n            text.inputEl.style.width = \"100%\";\n        });\n        new obsidian.Setting(containerEl)\n            .setName(\"Image Quality\")",
+                    "target": "log(\"Excluded folders regex:\", regexconverted);\n                }\n            }));\n            text.inputEl.rows = 4;\n            text.inputEl.style.width = \"100%\";\n        });\n        new obsidian.Setting(containerEl)\n            .setName(\"Image Quality\")"
+                },
+                {
+                    "source": "setDesc(\"Image quality selection (30 to 100).\")",
+                    "target": "setDesc(\"Image quality selection (30 to 100).\")"
+                },
+                {
+                    "source": "setName(\"File size lower limit in Kb\")",
+                    "target": "setName(\"File size lower limit in Kb\")"
+                },
+                {
+                    "source": "setDesc(\"Do not download files with size less than this value. Set 0 for no limit.\")",
+                    "target": "setDesc(\"Do not download files with size less than this value. Set 0 for no limit.\")"
+                },
+                {
+                    "source": "setDesc(\"The plugin will not download attachments with these extensions.\")",
+                    "target": "setDesc(\"The plugin will not download attachments with these extensions.\")"
+                },
+                {
+                    "source": "setName(\"Do not create Obsidian attachment folder (For compatibility with other plugins)\")",
+                    "target": "setName(\"Do not create Obsidian attachment folder (For compatibility with other plugins)\")"
+                },
+                {
+                    "source": "setDesc(\"The plugin will not create an Obsidian attachments folder. This may cause the plugin to behave incorrectly. \")",
+                    "target": "setDesc(\"The plugin will not create an Obsidian attachments folder. This may cause the plugin to behave incorrectly. \")"
+                },
+                {
+                    "source": "setName(\"Preserve link captions\")",
+                    "target": "setName(\"Preserve link captions\")"
+                },
+                {
+                    "source": "setDesc(\"Add media links captions to converted tags.\")",
+                    "target": "setDesc(\"Add media links captions to converted tags.\")"
+                },
+                {
+                    "source": "setName(\"Add original filename or 'Open file' tag\")",
+                    "target": "setName(\"Add original filename or 'Open file' tag\")"
+                },
+                {
+                    "source": "setDesc(\"Add [[original filename]] or [original filename](link to attachment) after replaced tag (only for file:// protocol or dropped/pasted files ).\")",
+                    "target": "setDesc(\"Add [[original filename]] or [original filename](link to attachment) after replaced tag (only for file:// protocol or dropped/pasted files ).\")"
+                },
+                {
+                    "source": "setName(\"Include pattern\")",
+                    "target": "setName(\"Include pattern\")"
+                },
+                {
+                    "source": "setDesc(\"Include only files with extensions only matching this pattern. Example: md|canvas\")",
+                    "target": "setDesc(\"Include only files with extensions only matching this pattern. Example: md|canvas\")"
+                },
+                {
+                    "source": "setName(\"Remove files completely\")",
+                    "target": "setName(\"Remove files completely\")"
+                },
+                {
+                    "source": "setDesc(\"Do not move orphaned files into the garbage can.\")",
+                    "target": "setDesc(\"Do not move orphaned files into the garbage can.\")"
+                },
+                {
+                    "source": "setName(\"How to write paths in tags\")",
+                    "target": "setName(\"How to write paths in tags\")"
+                },
+                {
+                    "source": "setDesc(\"Select whether to write full paths in tags or not.\")",
+                    "target": "setDesc(\"Select whether to write full paths in tags or not.\")"
+                },
+                {
+                    "source": "setName(\"Date format\")",
+                    "target": "setName(\"Date format\")"
+                },
+                {
+                    "source": "setName(\"Folder to save new attachments\")",
+                    "target": "setName(\"Folder to save new attachments\")"
+                },
+                {
+                    "source": "setName(\"Move/delete/rename media folder\")",
+                    "target": "setName(\"Move/delete/rename media folder\")"
+                },
+                {
+                    "source": "setName(\"Media folder\")",
+                    "target": "setName(\"Media folder\")"
+                },
+                {
+                    "source": "setDesc(\"Folder to keep all downloaded media files.\")",
+                    "target": "setDesc(\"Folder to keep all downloaded media files.\")"
+                },
+                {
+                    "source": "setDesc(\"Enable debug output to console.\")",
+                    "target": "setDesc(\"Enable debug output to console.\")"
+                },
+                {
+                    "source": "error(\"Triyng to enqueue item with attempts < 1\")",
+                    "target": "error(\"Triyng to enqueue item with attempts < 1\")"
+                },
+                {
+                    "source": "name = \"SuppressedError\"",
+                    "target": "name = \"SuppressedError\""
+                },
+                {
+                    "source": "name = \"#__proto__\"",
+                    "target": "name = \"#__proto__\""
+                },
+                {
+                    "source": "link: \" + link +\n                    \"",
+                    "target": "link: \" + link +\n                    \""
+                },
+                {
+                    "source": "name = 'General_Category'",
+                    "target": "name = 'General_Category'"
+                },
+                {
+                    "source": "name: ' + name + '",
+                    "target": "name: ' + name + '"
+                },
+                {
+                    "source": "text: \"Support the project! \"",
+                    "target": "text: \"Support the project! \""
+                },
+                {
+                    "source": "text: \"Interface settings\"",
+                    "target": "text: \"Interface settings\""
+                },
+                {
+                    "source": "text: \"Processing settings\"",
+                    "target": "text: \"Processing settings\""
+                },
+                {
+                    "source": "text: \"Note settings\"",
+                    "target": "text: \"Note settings\""
+                },
+                {
+                    "source": "text: \"Orphaned attachments\"",
+                    "target": "text: \"Orphaned attachments\""
+                },
+                {
+                    "source": "text: \"Media folder settings\"",
+                    "target": "text: \"Media folder settings\""
+                },
+                {
+                    "source": "text: \"Troubleshooting\"",
+                    "target": "text: \"Troubleshooting\""
+                },
+                {
+                    "source": "name: 'Anno Domini'",
+                    "target": "name: 'Anno Domini'"
+                },
+                {
+                    "source": "name: 'Before Christ'",
+                    "target": "name: 'Before Christ'"
+                },
+                {
+                    "source": "name: \" + fileName, false);\n        if (!fileName) {\n            throw new Error(\"",
+                    "target": "name: \" + fileName, false);\n        if (!fileName) {\n            throw new Error(\""
+                },
+                {
+                    "source": "text: \"Cancel\"",
+                    "target": "text: \"Cancel\""
+                },
+                {
+                    "source": "text: \"Confirm\"",
+                    "target": "text: \"Confirm\""
+                },
+                {
+                    "source": "name: \"Localize attachments for the current note (plugin folder)\"",
+                    "target": "name: \"Localize attachments for the current note (plugin folder)\""
+                },
+                {
+                    "source": "name: \"Localize attachments for the current note (Obsidian folder)\"",
+                    "target": "name: \"Localize attachments for the current note (Obsidian folder)\""
+                },
+                {
+                    "source": "name: \"Set the first found # header as a note name.\"",
+                    "target": "name: \"Set the first found # header as a note name.\""
+                },
+                {
+                    "source": "name: \"Localize attachments for all your notes (plugin folder)\"",
+                    "target": "name: \"Localize attachments for all your notes (plugin folder)\""
+                },
+                {
+                    "source": "name: \"Convert selection to URI\"",
+                    "target": "name: \"Convert selection to URI\""
+                },
+                {
+                    "source": "name: \"Convert selection from html to markdown\"",
+                    "target": "name: \"Convert selection from html to markdown\""
+                },
+                {
+                    "source": "name: \"Remove all orphaned attachments (Obsidian folder)\"",
+                    "target": "name: \"Remove all orphaned attachments (Obsidian folder)\""
+                },
+                {
+                    "source": "name: \"Remove all orphaned attachments (Plugin folder)\"",
+                    "target": "name: \"Remove all orphaned attachments (Plugin folder)\""
+                }
+            ]
+        }
+    }
+}
